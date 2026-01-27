@@ -1367,3 +1367,423 @@ There are 1 unused configuration paths:
 [0m23:36:50.139449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A19A942C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A178EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A19349C10>]}
 [0m23:36:50.139908 [debug] [MainThread]: Flushing usage events
 [0m23:36:51.000339 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:43:56.603076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B62BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B8123D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B8123B10>]}
+
+
+============================== 23:43:56.608837 | 7bcb46fd-86b4-4deb-8054-2050e51d6a1e ==============================
+[0m23:43:56.608837 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:43:56.610200 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m23:43:57.165041 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:43:57.165648 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:43:57.166051 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:43:57.501285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7bcb46fd-86b4-4deb-8054-2050e51d6a1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B6C3DCD0>]}
+[0m23:43:57.615771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7bcb46fd-86b4-4deb-8054-2050e51d6a1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B9733AC0>]}
+[0m23:43:57.617789 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m23:43:58.111489 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:43:58.245603 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:43:58.246112 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:43:58.246863 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:43:58.247977 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.example
+[0m23:43:58.254813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7bcb46fd-86b4-4deb-8054-2050e51d6a1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B9F0A350>]}
+[0m23:43:58.310586 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:43:58.314065 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:43:58.341331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7bcb46fd-86b4-4deb-8054-2050e51d6a1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B963FC50>]}
+[0m23:43:58.342544 [info ] [MainThread]: Found 522 macros
+[0m23:43:58.343171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7bcb46fd-86b4-4deb-8054-2050e51d6a1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205BA2E0F30>]}
+[0m23:43:58.344823 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:43:58.347354 [debug] [MainThread]: Command end result
+[0m23:43:58.377982 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:43:58.381287 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:43:58.385776 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m23:43:58.388112 [debug] [MainThread]: Command `dbt run` succeeded at 23:43:58.387783 after 1.95 seconds
+[0m23:43:58.388951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205BA28FC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B80EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205B9B49C10>]}
+[0m23:43:58.389776 [debug] [MainThread]: Flushing usage events
+[0m23:43:59.211869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:50:44.001625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002465F3BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024661423D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024661423B10>]}
+
+
+============================== 23:50:44.008932 | 322081a6-a1fc-44e4-869e-46f7d434c083 ==============================
+[0m23:50:44.008932 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:50:44.010039 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m23:50:44.602005 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:50:44.602814 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:50:44.603334 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:50:44.973976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '322081a6-a1fc-44e4-869e-46f7d434c083', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002465FB3DCD0>]}
+[0m23:50:45.081677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '322081a6-a1fc-44e4-869e-46f7d434c083', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024662833AC0>]}
+[0m23:50:45.083230 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m23:50:45.588219 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:50:45.716311 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:50:45.717084 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:50:45.717579 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:50:45.718661 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.example
+[0m23:50:45.725851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '322081a6-a1fc-44e4-869e-46f7d434c083', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002466300E350>]}
+[0m23:50:45.794704 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:50:45.798183 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:50:45.825034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '322081a6-a1fc-44e4-869e-46f7d434c083', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002466273FC50>]}
+[0m23:50:45.826588 [info ] [MainThread]: Found 522 macros
+[0m23:50:45.827258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '322081a6-a1fc-44e4-869e-46f7d434c083', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246631E4F30>]}
+[0m23:50:45.829178 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:50:45.831826 [debug] [MainThread]: Command end result
+[0m23:50:45.865661 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:50:45.869221 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:50:45.873862 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m23:50:45.875958 [debug] [MainThread]: Command `dbt run` succeeded at 23:50:45.875739 after 2.04 seconds
+[0m23:50:45.876828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002466318FC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246611EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024662E49C10>]}
+[0m23:50:45.877472 [debug] [MainThread]: Flushing usage events
+[0m23:50:46.767417 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:57:27.987984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271338BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027135723D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027135723B10>]}
+
+
+============================== 23:57:27.993645 | 0ea8e95d-1230-42c6-bd42-47d66ff25184 ==============================
+[0m23:57:27.993645 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:57:27.994867 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m23:57:28.547939 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:57:28.548525 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:57:28.548904 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:57:28.891146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ea8e95d-1230-42c6-bd42-47d66ff25184', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002713423DCD0>]}
+[0m23:57:29.006082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0ea8e95d-1230-42c6-bd42-47d66ff25184', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027136E33AC0>]}
+[0m23:57:29.007636 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m23:57:29.501896 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:57:29.616932 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:57:29.617445 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:57:29.617766 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:57:29.618564 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.example
+[0m23:57:29.624855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ea8e95d-1230-42c6-bd42-47d66ff25184', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002713760A350>]}
+[0m23:57:29.687059 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:57:29.690596 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:57:29.717360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ea8e95d-1230-42c6-bd42-47d66ff25184', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027136D3FC50>]}
+[0m23:57:29.718674 [info ] [MainThread]: Found 522 macros
+[0m23:57:29.719303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ea8e95d-1230-42c6-bd42-47d66ff25184', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271377E0F30>]}
+[0m23:57:29.721048 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:57:29.724097 [debug] [MainThread]: Command end result
+[0m23:57:29.754049 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:57:29.758359 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:57:29.763487 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m23:57:29.765084 [debug] [MainThread]: Command `dbt run` succeeded at 23:57:29.764924 after 1.94 seconds
+[0m23:57:29.765592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002713778FC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271356EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027137449C10>]}
+[0m23:57:29.766035 [debug] [MainThread]: Flushing usage events
+[0m23:57:30.567888 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:57:51.435264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B04BBF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B06C23D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B06C23B10>]}
+
+
+============================== 23:57:51.441541 | 8872c352-c0f3-4b22-894d-fe976ce13152 ==============================
+[0m23:57:51.441541 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:57:51.442685 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m23:57:51.991865 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:57:51.992483 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:57:51.992872 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:57:52.306150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8872c352-c0f3-4b22-894d-fe976ce13152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B0533DCD0>]}
+[0m23:57:52.413161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8872c352-c0f3-4b22-894d-fe976ce13152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B08033AC0>]}
+[0m23:57:52.414777 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m23:57:52.891607 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:57:53.004150 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:57:53.004657 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:57:53.004981 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:57:53.005671 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.example
+[0m23:57:53.012065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8872c352-c0f3-4b22-894d-fe976ce13152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B0880A350>]}
+[0m23:57:53.073847 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:57:53.077471 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:57:53.104810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8872c352-c0f3-4b22-894d-fe976ce13152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B07F3FC50>]}
+[0m23:57:53.106081 [info ] [MainThread]: Found 522 macros
+[0m23:57:53.106806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8872c352-c0f3-4b22-894d-fe976ce13152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B089E0F30>]}
+[0m23:57:53.108545 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:57:53.111048 [debug] [MainThread]: Command end result
+[0m23:57:53.139742 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:57:53.143611 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:57:53.148502 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m23:57:53.150140 [debug] [MainThread]: Command `dbt run` succeeded at 23:57:53.149981 after 1.86 seconds
+[0m23:57:53.150606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B089942C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B067EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B08649C10>]}
+[0m23:57:53.151136 [debug] [MainThread]: Flushing usage events
+[0m23:57:53.994224 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:59:19.126731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7365BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F73861FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F73861FB10>]}
+
+
+============================== 23:59:19.133333 | 166d61f8-e053-423f-b9a3-5e9268957869 ==============================
+[0m23:59:19.133333 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:59:19.134276 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course', 'indirect_selection': 'eager', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m23:59:19.376103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '166d61f8-e053-423f-b9a3-5e9268957869', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F736D3DCD0>]}
+[0m23:59:19.410283 [debug] [MainThread]: Command `dbt clean` succeeded at 23:59:19.410093 after 0.45 seconds
+[0m23:59:19.410987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F73871AF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F738A10050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F73861AC50>]}
+[0m23:59:19.411637 [debug] [MainThread]: Flushing usage events
+[0m23:59:20.308478 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:59:45.519020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BACBF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BCB23D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BCB23B10>]}
+
+
+============================== 23:59:45.525058 | 50107c1c-1670-438a-8954-6a1ec56bc920 ==============================
+[0m23:59:45.525058 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:59:45.526382 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m23:59:46.075517 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:59:46.076104 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:59:46.076485 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:59:46.398823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50107c1c-1670-438a-8954-6a1ec56bc920', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BB63DCD0>]}
+[0m23:59:46.517051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50107c1c-1670-438a-8954-6a1ec56bc920', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BE133AC0>]}
+[0m23:59:46.519030 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m23:59:47.031337 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:59:47.032860 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:59:47.033682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '50107c1c-1670-438a-8954-6a1ec56bc920', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BE027050>]}
+[0m23:59:48.124711 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.example
+[0m23:59:48.131135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '50107c1c-1670-438a-8954-6a1ec56bc920', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BE03F3E0>]}
+[0m23:59:48.191998 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:59:48.206144 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:59:48.236042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50107c1c-1670-438a-8954-6a1ec56bc920', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BEA9D470>]}
+[0m23:59:48.236754 [info ] [MainThread]: Found 522 macros
+[0m23:59:48.237359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50107c1c-1670-438a-8954-6a1ec56bc920', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BE9ACE20>]}
+[0m23:59:48.239252 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:59:48.240228 [debug] [MainThread]: Command end result
+[0m23:59:48.268339 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m23:59:48.272359 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m23:59:48.278815 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m23:59:48.280912 [debug] [MainThread]: Command `dbt run` succeeded at 23:59:48.280703 after 2.92 seconds
+[0m23:59:48.281480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BCAEDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BEA5D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229BEA5D700>]}
+[0m23:59:48.282043 [debug] [MainThread]: Flushing usage events
+[0m23:59:49.065513 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:32.959426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137DCCBF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137DEB23D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137DEB23B10>]}
+
+
+============================== 22:45:32.974512 | 4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3 ==============================
+[0m22:45:32.974512 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:45:32.975562 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:45:33.508982 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:45:33.509557 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:45:33.509961 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:45:33.821605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137DD63DCD0>]}
+[0m22:45:33.925653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E0133AC0>]}
+[0m22:45:33.927120 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m22:45:34.391711 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:45:34.458512 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:45:34.459358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E002AB50>]}
+[0m22:45:35.446831 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbnb.src
+- models.airbnb.dim
+[0m22:45:35.453204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E003F5C0>]}
+[0m22:45:35.510663 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:45:35.514820 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:45:35.541436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E09CCE50>]}
+[0m22:45:35.542193 [info ] [MainThread]: Found 522 macros
+[0m22:45:35.542918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d7f6007-3d8f-4b47-a95b-2f2377fb4cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E098F1E0>]}
+[0m22:45:35.544662 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:45:35.545619 [debug] [MainThread]: Command end result
+[0m22:45:35.576118 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:45:35.580052 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:45:35.586197 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m22:45:35.587880 [debug] [MainThread]: Command `dbt run` succeeded at 22:45:35.587717 after 2.81 seconds
+[0m22:45:35.588348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137DEAEDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E0C63490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137E0C63280>]}
+[0m22:45:35.588791 [debug] [MainThread]: Flushing usage events
+[0m22:45:36.456882 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:54.808970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453BFBF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453E023D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453E023B10>]}
+
+
+============================== 22:45:54.817237 | ca33964d-fc76-45dd-a70a-04b61f7aceb7 ==============================
+[0m22:45:54.817237 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:45:54.818194 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:45:55.375626 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:45:55.376212 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:45:55.376595 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:45:55.721390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ca33964d-fc76-45dd-a70a-04b61f7aceb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453C73DCD0>]}
+[0m22:45:55.830546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ca33964d-fc76-45dd-a70a-04b61f7aceb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453F433AC0>]}
+[0m22:45:55.832035 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m22:45:56.300684 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:45:56.446913 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:45:56.447620 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:45:56.448544 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:45:56.449631 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbnb.dim
+- models.airbnb.src
+[0m22:45:56.457063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ca33964d-fc76-45dd-a70a-04b61f7aceb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453FE0A350>]}
+[0m22:45:56.522330 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:45:56.525916 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:45:56.555018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ca33964d-fc76-45dd-a70a-04b61f7aceb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453F33FC50>]}
+[0m22:45:56.558968 [info ] [MainThread]: Found 522 macros
+[0m22:45:56.559638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ca33964d-fc76-45dd-a70a-04b61f7aceb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453FFE0F30>]}
+[0m22:45:56.561604 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:45:56.564129 [debug] [MainThread]: Command end result
+[0m22:45:56.590473 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:45:56.593754 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:45:56.598433 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m22:45:56.600306 [debug] [MainThread]: Command `dbt run` succeeded at 22:45:56.600127 after 1.95 seconds
+[0m22:45:56.600780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453FF982C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453DDEDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002453FA49C10>]}
+[0m22:45:56.601218 [debug] [MainThread]: Flushing usage events
+[0m22:45:57.438550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:24.987399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259E8BBF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259EAC23D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259EAC23B10>]}
+
+
+============================== 22:48:24.993239 | 4369d40c-2b4d-4fd1-8c3d-5e6f8d222810 ==============================
+[0m22:48:24.993239 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:48:24.994182 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:48:25.555047 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:48:25.555620 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:48:25.556017 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:48:25.870220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4369d40c-2b4d-4fd1-8c3d-5e6f8d222810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259E933DCD0>]}
+[0m22:48:25.982331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4369d40c-2b4d-4fd1-8c3d-5e6f8d222810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259EC033AC0>]}
+[0m22:48:25.983799 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m22:48:26.482799 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:48:26.601434 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:48:26.601948 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:48:26.602265 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:48:26.602972 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbnb.src
+- models.airbnb.dim
+[0m22:48:26.610826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4369d40c-2b4d-4fd1-8c3d-5e6f8d222810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259ECA02350>]}
+[0m22:48:26.671523 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:48:26.674860 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:48:26.705662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4369d40c-2b4d-4fd1-8c3d-5e6f8d222810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259EBF3FC50>]}
+[0m22:48:26.709909 [info ] [MainThread]: Found 522 macros
+[0m22:48:26.710753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4369d40c-2b4d-4fd1-8c3d-5e6f8d222810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259ECBE0F30>]}
+[0m22:48:26.712943 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:48:26.715534 [debug] [MainThread]: Command end result
+[0m22:48:26.742965 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:48:26.747386 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:48:26.751948 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m22:48:26.753517 [debug] [MainThread]: Command `dbt run` succeeded at 22:48:26.753355 after 1.92 seconds
+[0m22:48:26.753992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259ECB982C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259EA9EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259EC649C10>]}
+[0m22:48:26.754538 [debug] [MainThread]: Flushing usage events
+[0m22:48:27.585117 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:53:35.493030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291B73BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291B9623D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291B9623B10>]}
+
+
+============================== 22:53:35.498616 | 3dbe5ab0-7300-4a7a-986a-560e40214637 ==============================
+[0m22:53:35.498616 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:53:35.499826 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'use_colors': 'True', 'invocation_command': 'dbt run --select dim_listings_cleansed dim_hosts_cleansed', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:53:36.025776 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:53:36.026342 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:53:36.026716 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:53:36.342126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3dbe5ab0-7300-4a7a-986a-560e40214637', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291B7D3DCD0>]}
+[0m22:53:36.447899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3dbe5ab0-7300-4a7a-986a-560e40214637', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BAA33AC0>]}
+[0m22:53:36.449379 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m22:53:36.945238 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:53:37.076097 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:53:37.076683 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:53:37.077028 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:53:37.077856 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbnb.src
+- models.airbnb.dim
+[0m22:53:37.085307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3dbe5ab0-7300-4a7a-986a-560e40214637', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BB406350>]}
+[0m22:53:37.152267 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:53:37.157060 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:53:37.184502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3dbe5ab0-7300-4a7a-986a-560e40214637', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BA93FC50>]}
+[0m22:53:37.189446 [info ] [MainThread]: Found 522 macros
+[0m22:53:37.190168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3dbe5ab0-7300-4a7a-986a-560e40214637', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BB5E0F30>]}
+[0m22:53:37.190835 [warn ] [MainThread]: The selection criterion 'dim_listings_cleansed' does not match any enabled nodes
+[0m22:53:37.191742 [warn ] [MainThread]: The selection criterion 'dim_hosts_cleansed' does not match any enabled nodes
+[0m22:53:37.193738 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:53:37.196202 [debug] [MainThread]: Command end result
+[0m22:53:37.225084 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:53:37.228250 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:53:37.232687 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m22:53:37.234175 [debug] [MainThread]: Command `dbt run` succeeded at 22:53:37.234021 after 1.89 seconds
+[0m22:53:37.234632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BB5982C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291B93EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BB049C10>]}
+[0m22:53:37.235069 [debug] [MainThread]: Flushing usage events
+[0m22:53:38.150780 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:55:34.544204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66BCBF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66DB23D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66DB23B10>]}
+
+
+============================== 22:55:34.550073 | 661e48e8-95f7-4dd9-b963-d516b7908820 ==============================
+[0m22:55:34.550073 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:55:34.551672 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:55:35.115665 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:55:35.116425 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:55:35.116937 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:55:35.464846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '661e48e8-95f7-4dd9-b963-d516b7908820', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66C63DCD0>]}
+[0m22:55:35.585471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '661e48e8-95f7-4dd9-b963-d516b7908820', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66F133AC0>]}
+[0m22:55:35.587019 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m22:55:36.090027 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:55:36.209712 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:55:36.210382 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:55:36.210782 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:55:36.211551 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbnb.src
+- models.airbnb.dim
+[0m22:55:36.221089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '661e48e8-95f7-4dd9-b963-d516b7908820', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66F90A350>]}
+[0m22:55:36.280712 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:55:36.284395 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:55:36.315139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '661e48e8-95f7-4dd9-b963-d516b7908820', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66F03FC50>]}
+[0m22:55:36.320997 [info ] [MainThread]: Found 522 macros
+[0m22:55:36.321801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '661e48e8-95f7-4dd9-b963-d516b7908820', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66FCE0F30>]}
+[0m22:55:36.324231 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:55:36.327696 [debug] [MainThread]: Command end result
+[0m22:55:36.364754 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:55:36.369047 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:55:36.373727 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m22:55:36.375765 [debug] [MainThread]: Command `dbt run` succeeded at 22:55:36.375566 after 2.00 seconds
+[0m22:55:36.376349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66FC982C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66DAEDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B66F549C10>]}
+[0m22:55:36.376838 [debug] [MainThread]: Flushing usage events
+[0m22:55:37.230736 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:58:18.794691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857E0BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857FF23D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857FF23B10>]}
+
+
+============================== 22:58:18.801279 | f0141e05-50b1-4d9a-9ca7-307505a66c12 ==============================
+[0m22:58:18.801279 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:58:18.802304 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:58:19.362202 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:58:19.362809 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:58:19.363186 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:58:19.465674 [warn ] [MainThread]: [[33mWARNING[0m][CustomTopLevelKeyDeprecation]: Deprecated functionality
+Unexpected top-level key airbnb in file
+`C:\Users\kenis\Projects\dbt-course\dbt_project.yml`
+[0m22:58:19.466595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f0141e05-50b1-4d9a-9ca7-307505a66c12', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857FEFF490>]}
+[0m22:58:19.588054 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('airbnb' was unexpected)
+
+Error encountered in C:\Users\kenis\Projects\dbt-course\dbt_project.yml
+[0m22:58:19.589592 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomTopLevelKeyDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:58:19.591786 [debug] [MainThread]: Command `dbt run` failed at 22:58:19.591629 after 0.98 seconds
+[0m22:58:19.592239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028581868F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028581869040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028581426E50>]}
+[0m22:58:19.592667 [debug] [MainThread]: Flushing usage events
+[0m22:58:20.464818 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:59:03.015444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E8143BF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E816423D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E816423B10>]}
+
+
+============================== 22:59:03.020999 | 8a6039d8-a431-448a-bc8a-5ec2176f8a1c ==============================
+[0m22:59:03.020999 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:59:03.022050 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\kenis\\Projects\\dbt-course\\airbnb', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kenis\\Projects\\dbt-course\\logs'}
+[0m22:59:03.626148 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:59:03.626977 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:59:03.627495 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:59:03.974101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8a6039d8-a431-448a-bc8a-5ec2176f8a1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E814B3DCD0>]}
+[0m22:59:04.096259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8a6039d8-a431-448a-bc8a-5ec2176f8a1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E817833AC0>]}
+[0m22:59:04.098726 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m22:59:04.593493 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:59:04.710575 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:59:04.711261 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:59:04.711710 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:59:04.712755 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbnb.dim
+- models.airbnb.src
+[0m22:59:04.720902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8a6039d8-a431-448a-bc8a-5ec2176f8a1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E818206350>]}
+[0m22:59:04.785799 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:59:04.789379 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:59:04.825143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8a6039d8-a431-448a-bc8a-5ec2176f8a1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E81773FC50>]}
+[0m22:59:04.829336 [info ] [MainThread]: Found 522 macros
+[0m22:59:04.830125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a6039d8-a431-448a-bc8a-5ec2176f8a1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E8183E0F30>]}
+[0m22:59:04.833026 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:59:04.836195 [debug] [MainThread]: Command end result
+[0m22:59:04.863140 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kenis\Projects\dbt-course\target\manifest.json
+[0m22:59:04.866897 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kenis\Projects\dbt-course\target\semantic_manifest.json
+[0m22:59:04.871292 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kenis\Projects\dbt-course\target\run_results.json
+[0m22:59:04.873832 [debug] [MainThread]: Command `dbt run` succeeded at 22:59:04.873563 after 2.03 seconds
+[0m22:59:04.874639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E8183982C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E8161EDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E817E49C10>]}
+[0m22:59:04.875310 [debug] [MainThread]: Flushing usage events
+[0m22:59:05.670508 [debug] [MainThread]: An error was encountered while trying to flush usage events
