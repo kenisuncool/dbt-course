@@ -1,4 +1,11 @@
-
 target/
 dbt_packages/
 logs/
+venv/
+.venv/
+
+# Secrets and Keys
+*.pem
+*.key
+*.p8
+id_rsa
