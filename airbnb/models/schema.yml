@@ -2,6 +2,7 @@ models:
   - name: dim_listings_cleansed
     description: Cleansed table containing Airbnb listings.
     data_tests:
+      - dim_listings_cleansed__minimum_nights
       - minimum_row_count:
           arguments:
             min_row_count: 1000
@@ -30,11 +31,12 @@ models:
                 values: ['Entire home/apt', 'Private room', 'Shared room', 'Hotel room']
 
       - name: minimum_nights
-        description: '{{ doc("dim_listing_cleansed__minimum_nights") }}'
+        description: '{{ doc("dim_listings_cleansed__minimum_nights") }}'
         data_tests:
           - positive_values
 
   - name: dim_hosts_cleansed
+    description: Cleansed table containing Airbnb hosts.
     config:
       contract:
         enforced: true
